@@ -1,0 +1,10 @@
+[build]
+  base = "frontend"
+  publish = "dist"
+  command = "npm run build"
+
+# Redirect rule to support React Router client-side routing (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
