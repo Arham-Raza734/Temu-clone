@@ -5,7 +5,7 @@ dotenv.config();
 
 const connectDB = async () => {
   try {
-    const connUri = process.env.MONGODB_URI;
+    const connUri = process.env.MONGODB_URI || process.env.MONGO_URI;
     if (!connUri || connUri.includes('cluster0.example.mongodb.net')) {
       console.warn('\n==================================================================');
       console.warn('WARNING: MongoDB Connection URI is still using the default placeholder.');
