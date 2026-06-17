@@ -14,7 +14,8 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use('/uploads', express.static('uploads'));
+const isVercel = process.env.VERCEL === '1';
+app.use('/uploads', express.static(isVercel ? '/tmp/uploads' : 'uploads'));
 
 // Routes
 app.use('/api/products', productRoutes);
@@ -35,7 +36,11 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
-});
-// nodemon reload trigger
+// Only listen on PORT if not running as a serverless function on Vercel
+if (process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
+  });
+}
+
+export default app;

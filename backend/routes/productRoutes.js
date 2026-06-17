@@ -12,8 +12,9 @@ import {
 
 const router = express.Router();
 
-// Ensure uploads folder exists
-const uploadDir = './uploads';
+// Ensure uploads folder exists (use /tmp on Vercel as filesystem is read-only)
+const isVercel = process.env.VERCEL === '1';
+const uploadDir = isVercel ? '/tmp/uploads' : './uploads';
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
@@ -58,9 +59,10 @@ router.post('/upload', upload.single('image'), (req, res) => {
       return res.status(400).json({ message: 'No file uploaded' });
     }
     
-    // Construct local dev server static URL
-    const port = process.env.PORT || 5000;
-    const imageUrl = `http://localhost:${port}/uploads/${req.file.filename}`;
+    // Construct dynamic server static URL
+    const host = req.get('host');
+    const protocol = req.headers['x-forwarded-proto'] || req.protocol;
+    const imageUrl = `${protocol}://${host}/uploads/${req.file.filename}`;
     res.status(201).json({ imageUrl });
   } catch (error) {
     res.status(500).json({ message: error.message });
