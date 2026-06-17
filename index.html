@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temu frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar1">
+            <a href="#" class="box1 a1">
+                <i class="fa-regular fa-truck delivery-icon"></i>
+            <div class="content1">
+               <p>Free shipping on all orders<i class="fa-solid fa-chevron-right"></i></p>
+                <p class="s-text">Limited-time offer</p>
+            </div>
+            </a>
+            <div class="glowline"></div>
+            <a href="#" class="box2 a2">
+                <i class="fa-regular fa-square-check icon"></i>
+            <div class="content1">
+               <p>Delivery guarantee</p>
+                <p class="s-text">Refund for any issues</p>
+            </div>
+            </a>
+            <div class="glowline"></div>
+            <a href="#" class="box2 a2">
+                <i class="fa-solid fa-mobile-screen-button icon"></i>
+                <p class="content1">Get the Temu App</p>
+            </a>
+        </div>
+        <div class="navbar2">
+            <a href="#" class="logo" ></a>
+            <a href="#" class="box2-nav2 a3" >
+                <i class="fa-solid fa-thumbs-up like-icon"></i>
+                <p class="content2">Best-Selling Items</p>
+            </a>
+            <a href="#" class="box3-nav2 a3" >
+                <i class="fa-solid fa-star-half-stroke star-icon"></i>
+                <p class="content2">5-Star Rated</p>
+            </a>
+            <a href="#" class="box4-nav2 a3">
+                <p class="content2">New In</p>
+            </a>
+            <a href="#" class="box5-nav2 a3" >
+                <p class="content2">Categories <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <div class="nav-search">
+                <input placeholder="Search Temu" id="search-input">
+                <a href="#" class="search-button a3">
+                    <i class="fa-solid fa-magnifying-glass search-icon" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <a href="#" class="box7-nav2 a3">
+                   <i class="fa-regular fa-user person-icon"></i>
+                    <p class="content2">Orders &<br>Accounts</p>
+            </a>
+            <a href="#" class="box8-nav2 a3">
+                <i class="fa-regular fa-comment support-icon"></i>
+                <p class="content2">Support</p>
+            </a>
+            <a href="#" class="box9-nav2 a3">
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="main-content">
+        <div class="auto-fitgoods">
+        <div class="result"></div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (1).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span></span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (2).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (3).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (4).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (5).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (6).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (7).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (8).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (9).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (10).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (11).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (12).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (13).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (14).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+            <div class="box" onclick="goProduct()">
+                <div class="box-image">
+                    <div class="image" style="background-image: url('image (15).jpg')"></div>
+                </div>
+                <p class="content3">1pc Portable USB Powered Lint Remover, Automatic Fabric Shaver for Clothes, Bedding, Carpets, Sofas - Effective Ball & Fuzz Removal, Household Cleaning Tool, Plastic, 36V Max Voltage, No Battery Required</p>
+                <div class="sale-info">
+                <div class="price">
+                    <span class="currency">Rs.</span>
+                    <span class="current-price">1,995</span>
+                </div>
+                <div class="price-2">
+                    <span class="market-price">7,935</span>
+                    <span>31k+</span>
+                    <span>sold</span>
+                </div>
+                </div>
+                <div class="cart" onclick="goCart(event)" >
+                    <i class="fa-solid fa-cart-plus cart-icon"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    </div>
+                    <span>3,478</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="main-content">
+          <div class="row1">
+            <div class="list">
+                <h6>Company info</h6>
+                <ul>
+                    <li><a href="#">About Temu</a></li>
+                    <li><a href="#">Affiliate & Influencer Program: Join to Earn</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Temu's Tree Planting Program</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <h6>Customer service</h6>
+                <ul>
+                    <li><a href="#">Return & refund service</a></li>
+                    <li><a href="#">Intellectual property policy</a></li>
+                    <li><a href="#">shipping info</a></li>
+                    <li><a href="#">Report suspicious activity</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <h6>Help</h6>
+                <ul>
+                    <li><a href="#">Support center & FAQ</a></li>
+                    <li><a href="#">Safety center</a></li>
+                    <li><a href="#">Temu purchase protection</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Partner with Temu</a></li>
+                </ul>
+            </div>
+            <div class="list2">
+                <div class="app">
+                <h6><a href="#">Download the Temu App</a></h6>
+                <div class="row">
+                <div class="tool">
+                    <div class="tool-icon" style="background-image: url('i (1).png');"></div>
+                    <div class="tool-text">Price drop alerts</div>
+                </div>
+                <div class="line"></div>
+                <div class="tool">
+                    <div class="tool-icon" style="background-image: url('i (2).png');"></div>
+                    <div class="tool-text">Track orders any time</div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="tool">
+                    <div class="tool-icon" style="background-image: url('i (3).png');"></div>
+                    <div class="tool-text">Faster and more secure customer shopping</div>
+                </div>
+                <div class="line"></div>
+                <div class="tool">
+                    <div class="tool-icon" style="background-image: url('i (4).png');"></div>
+                    <div class="tool-text">low stock items alert</div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="tool">
+                    <div class="tool-icon" style="background-image: url('i (5).png');"></div>
+                    <div class="tool-text">Exclusive offers</div>
+                </div>
+                <div class="line"></div>
+                <div class="tool">
+                    <div class="tool-icon" style="background-image: url('i (6).png');"></div>
+                    <div class="tool-text">Coupons & offers alerts</div>
+                </div>
+                </div>
+                <div class="download-list">
+                    <a href="#" class="store">
+                        <div class="store-img" style="background-image: url(app-store.png);"></div>
+                        <div class="store-content">
+                        <div class="sub-title">Download on the</div>
+                        <div class="title">App Store</div>
+                        </div>
+                    </a>
+                    <a href="#" class="store">
+                        <div class="store-img" style="background-image: url(play-store.png);"></div>
+                        <div class="store-content">
+                        <div class="sub-title">Get it on</div>
+                        <div class="title">Google Play</div>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="connect">
+                    <h6>Connect with Temu</h6>
+                    <div class="media-list">
+                        <div class="media-icon-outer">
+                            <a href="#" class="media-icon" style="background-image: url('media (2).png');"></a>
+                        </div>
+                        <div class="media-icon-outer">
+                            <a href="#" class="media-icon" style="background-image: url('media (3).png');"></a>
+                        </div>
+                        <div class="media-icon-outer">
+                            <a href="#" class="media-icon" style="background-image: url('media (4).png');"></a>
+                        </div>
+                        <div class="media-icon-outer">
+                            <a href="#" class="media-icon" style="background-image: url('media (5).png');"></a>
+                        </div>
+                        <div class="media-icon-outer">
+                            <a href="#" class="media-icon" style="background-image: url('media (6).png');"></a>
+                        </div>
+                        <div class="media-icon-outer">
+                            <a href="#" class="media-icon" style="background-image: url('media (1).png');"></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+        <div class="secure">
+            <h6>Secure Certification</h6>
+            <div class="brand">
+                <img src="secure-icon (1).png" class="secure-icon">
+                <img src="secure-icon (2).png" class="secure-icon">
+                <img src="secure-icon (3).png" class="secure-icon2">
+                <img src="secure-icon (4).png" class="secure-icon2">
+                <img src="secure-icon (5).png" class="secure-icon2">
+                <img src="secure-icon (6).png" class="secure-icon">
+                <img src="secure-icon (7).png" class="secure-icon">
+            </div>
+        </div>
+        <div class="payment">
+            <h6>We accept</h6>
+            <div class="cards-list">
+                <img src="payment-icon (12).png" class="payment-icon">
+                <img src="payment-icon (2).png" class="payment-icon">
+                <img src="payment-icon (3).png" class="payment-icon">
+                <img src="payment-icon (4).png" class="payment-icon">
+                <img src="payment-icon (5).png" class="payment-icon">
+                <img src="payment-icon (6).png" class="payment-icon">
+                <img src="payment-icon (7).png" class="payment-icon">
+                <img src="payment-icon (8).png" class="payment-icon">
+                <img src="payment-icon (9).png" class="payment-icon">
+                <img src="payment-icon (10).png" class="payment-icon">
+                <img src="payment-icon (11).png" class="payment-icon">
+                <img src="payment-icon (1).png" class="payment-icon">
+            </div>
+        </div>
+        </div>
+        <div class="bottom-wrap">
+            <div class="copy-right">
+                © 2022－2025 Whaleco Inc.
+                <span>Terms of use</span>
+                <span>Privacy Policy</span>
+                <span>Your privacy choices <img src="declaration-icon.png " class="declaration-icon"></span>
+                <span>Ad Choices</span>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+function goProduct() {
+    window.location.href = "product.html";
+}
+
+function goCart(event) {
+    event.stopPropagation();
+    window.location.href = "cart.html";
+}
+</script>
